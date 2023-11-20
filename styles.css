@@ -57,7 +57,7 @@ header > p {
     display: grid;
     /* grid-template-rows: repeat(6, 1fr); */
     height: 85%;
-    width: 90%;
+    width: 95%;
     background-color: #323031;
     color: #ffffff;
     padding: 4%;
