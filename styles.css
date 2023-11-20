@@ -25,7 +25,7 @@ header {
     text-align: center;
     width: 80%;
     max-width: 600px;
-    margin-bottom: 5%;
+    margin-bottom: 25px;
 }
 
 header > h1 {
@@ -55,7 +55,7 @@ header > p {
 #content {
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
     height: 85%;
     width: 90%;
     background-color: #323031;
@@ -73,4 +73,24 @@ header > p {
     border: 1px solid;
     font-family: inherit;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+#characters {
+    display: grid;
+    margin-top: 25px;
+    height: 20px;
+    aspect-ratio: 1;
+    grid-template-columns: repeat(13, 20px);
+    grid-template-rows: repeat(4, 20px);
+    text-align: center;
+}
+
+.chars {
+    border: 1px solid #323031;
+    font-weight: bold;
+}
+
+.chars .new {
+    font-weight: none;
 }
