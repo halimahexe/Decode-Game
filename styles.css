@@ -1,0 +1,76 @@
+/* Colour palette:
+Background-color: hsl(270, 100%, 80%);
+font colour: #323031;
+window colour: rgb(127, 0, 255);
+highlight colour: #FFD449 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(270, 100%, 80%);
+    font-family: monospace;
+    color: #323031;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 5%;
+}
+
+header > h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+header > p {
+    font-size: 1.2rem;
+}
+
+#game-window {
+    background-color: rgb(127, 0, 255);
+    height: 50%;
+    max-height: 500px;
+    width: 80%;
+    max-width: 550px;
+    border-radius: 7.5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    height: 85%;
+    width: 90%;
+    background-color: #323031;
+    color: #ffffff;
+    padding: 4%;
+    font-size: 1.1rem;
+}
+
+#reset {
+    width: 25%;
+    height: 7.5%;
+    background: #FFD449;
+    margin-top: 2%;
+    border-radius: 7.5px;
+    border: 1px solid;
+    font-family: inherit;
+    font-weight: bold;
+}
